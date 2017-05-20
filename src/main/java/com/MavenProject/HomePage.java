@@ -10,7 +10,7 @@ public class HomePage extends Utils {
 
     public void clickOnRegisterButton() {
 
-        clickOnElement(By.xpath("//a[@class=\"ico-register\"]"));
+        clickOnElement(By.xpath("//a[contains(text(),'Register')]"));
         Assert.assertEquals("Register", getTextFromElement(By.xpath("//div[@class='page-title']/h1")));
 
     }
